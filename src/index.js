@@ -59,7 +59,7 @@ app.post("/add", function (req, res) {
     //Create A Response
     const response = {
       status: "success",
-      message: `The sum of given two numbers`,
+      message: `the sum of given two numbers`,
       sum: sum,
     };
     res.send(response);
