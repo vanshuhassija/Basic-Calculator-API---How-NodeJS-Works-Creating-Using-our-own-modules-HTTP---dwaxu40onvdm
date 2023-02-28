@@ -40,7 +40,9 @@ function validateRequest(num1, num2, result) {
     return null;
   }
 }
-
+app.get("/", function (req, res) {
+  res.send("Hello world!");
+});
 app.post("/add", function (req, res) {
   //We need Two Numbers to Add
   //In Post Request The Data is Sent in the Body
@@ -57,7 +59,7 @@ app.post("/add", function (req, res) {
     //Create A Response
     const response = {
       status: "success",
-      message: `The Sum of given two numbers`,
+      message: `The sum of given two numbers`,
       sum: sum,
     };
     res.send(response);
